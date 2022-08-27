@@ -1,4 +1,4 @@
-package Data_Structure;
+package Data_Structure.stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import java.util.StringTokenizer;
  * -----------------------------------------------------------
  * 2022-08-24        Hosun              최초 생성
  */
-public class Stack_Q10828 {
+public class Q10828 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
