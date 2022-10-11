@@ -19,26 +19,47 @@ public class Q2941 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int count = 0;
-        int bit = 0;
         String str = br.readLine();
+        int len = str.length();
 
-        String sarray[] = new String[]{"c=","c-","dz=",
-                "d-","lj","nj","s=","z="};
+        for(int i=0; i<str.length(); i++){
+            char c = str.charAt(i);
+            char ch = str.charAt(i);
 
-        for(int j=0; j<str.length(); j++){
-            for(int i=0; i< sarray.length; i++){
-                if(str.contains(sarray[i])){
-                    count++;
-                    int size = sarray[i].length();
-                    bit += size;
-                    j+=size;
-                    break;
+            if(ch == 'c' && i < len - 1) {
+                if(str.charAt(i + 1) == '=' || str.charAt(i + 1) == '-') {
+                    i++;
+                }
+
+            }
+
+            else if(ch == 'd' && i < len - 1) {
+                if(str.charAt(i + 1) == '-') {
+                    i++;
+                }
+                else if(str.charAt(i + 1) == 'z' && i < len - 2) {
+
+                    if(str.charAt(i + 2) == '=') {
+                        i += 2;
+                    }
                 }
             }
+
+            else if((ch == 'l' || ch == 'n') && i < len - 1) {
+                if(str.charAt(i + 1) == 'j') {
+                    i++;
+                }
+            }
+
+
+            else if((ch == 's' || ch == 'z') && i < len - 1) {
+                if(str.charAt(i + 1) == '=') {
+                    i++;
+                }
+
+            }
+            count++;
         }
-
-        int result = count + (str.length()-bit);
-        System.out.println(result);
-
+        System.out.println(count);
     }
 }
