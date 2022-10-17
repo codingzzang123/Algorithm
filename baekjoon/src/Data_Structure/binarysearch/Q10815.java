@@ -1,4 +1,4 @@
-package binarysearch;
+package Data_Structure.binarysearch;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /**
- * packageName    : binarysearch
+ * packageName    : Data_Structure.binarysearch
  * fileName       : Q10815
  * author         : Hosun
  * date           : 2022-10-11

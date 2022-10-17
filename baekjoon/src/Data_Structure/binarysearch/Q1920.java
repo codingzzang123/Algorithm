@@ -1,7 +1,7 @@
-package binarysearch;
+package Data_Structure.binarysearch;
 
 /**
- * packageName    : binarysearch
+ * packageName    : Data_Structure.binarysearch
  * fileName       : Q1920
  * author         : Hosun
  * date           : 2022-10-13
